@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="login" class="login">
+        <h2>Register with us</h2>
+        <div class="user">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            class="username"
+            placeholder="Enter Username"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            class="email"
+            placeholder="Enter your email"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="pass">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="password"
+            placeholder="Enter the password"
+          />
+          <small>Error message</small>
+        </div>
+
+        <div class="pass2">
+          <label for="password2">Confirm password </label>
+          <input
+            type="password"
+            id="password2"
+            class="password2"
+            placeholder="Enter the password again"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="bt">
+          <input type="submit" value="submit" id="btn" />
+        </div>
+      </form>
+      <video muted loop autoplay>
+        <source
+          src="https://assets.mixkit.co/videos/preview/mixkit-exploding-ink-underwater-105-large.mp4"
+          type="video/mp4"
+        />
+        Your browser doesn't support the video
+      </video>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
