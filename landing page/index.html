@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <img
+          src="https://randomuser.me/api/portraits/lego/4.jpg"
+          alt="Random image"
+        />
+      </div>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">Benefits</a></li>
+        <li><a href="#">ABout</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <h1>LANDING PAGE</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nisi.
+      </p>
+      <button id="sign" class="sign">SIGN UP</button>
+    </header>
+    <div class="container">
+      <div class="benefits">
+        <h3>Benefits</h3>
+        <ul>
+          <li>Last longs</li>
+          <li>Duarble</li>
+          <li>Money back guarantee</li>
+          <li>Cheaper</li>
+        </ul>
+      </div>
+      <div class="about">
+        <h3>About</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam vero
+          ipsam error cum nostrum repellendus facilis saepe, ex obcaecati nobis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+          dolorum, minima inventore rem, ipsam culpa consectetur vitae
+          aspernatur fugiat eum amet beatae sequi natus molestiae! Inventore
+          repellat suscipit, consequuntur unde placeat in quis asperiores
+          dignissimos?
+        </p>
+      </div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          placeat ducimus sint dolorum quibusdam porro laudantium ratione
+          obcaecati eius iusto vel consequuntur, nihil tenetur consectetur nemo
+          cum enim dolore earum est saepe. Neque vero maxime iusto saepe magnam?
+          Facere, neque?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+          ratione nisi veniam officia commodi dolorem accusantium. Nesciunt
+          voluptas quis corporis?
+        </p>
+      </div>
+      <div class="extra">
+        <h3>Learn more</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maiores
+          delectus odio hic suscipit, maxime cumque provident? Voluptatum quia,
+          consequatur rem cumque, minima ipsa culpa optio quidem nemo modi harum
+          voluptates iste? Similique sit asperiores iusto eum quasi libero
+          pariatur officiis ipsam! Pariatur illo obcaecati explicabo fugit
+          molestiae odit assumenda.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+          corporis eveniet aut, atque odio officia dicta reiciendis at impedit
+          saepe earum, blanditiis ex iste ab nihil! Dicta ad ea eos dolore nihil
+          iusto voluptatum, nemo culpa perspiciatis cum voluptate ullam atque.
+          Excepturi magnam magni, quis harum possimus perspiciatis quo
+          architecto!
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal Description-->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>SIGN UP</h3>
+        </div>
+        <div class="modal-content">
+          <form class="box">
+            <div>
+              <label for="name">Enter username</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter username"
+              />
+            </div>
+            <div>
+              <label for="password">Enter userpassword</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="password"
+              />
+            </div>
+            <div>
+              <label for="password2">Enter userpassword2</label>
+              <input
+                type="password"
+                id="password2"
+                name="password2"
+                placeholder="Confirm password"
+              />
+            </div>
+            <div>
+              <label for="email">Enter useremail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="enter email"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

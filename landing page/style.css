@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+:root {
+  --pcolor: #33ffbd;
+  --scolor: #90f35d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3 ease-in;
+}
+
+body.show-nav {
+  transform: translate(250px);
+}
+* {
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--pcolor);
+  border-right: 2px solid greenyellow;
+  width: 250px;
+  z-index: 100;
+  transform: translateX(-100%);
+}
+
+nav img {
+  height: 100px;
+  width: 90px;
+  margin: 0 auto;
+  margin-left: 70px;
+  border-radius: 50px;
+  border: 2px solid gold;
+}
+
+nav .logo {
+  padding: 30px 0px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid seagreen;
+  padding-bottom: 10px;
+}
+
+nav ul li a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  background-color: var(--scolor);
+  margin: 0;
+  width: 100%;
+}
+
+.toggle {
+  float: left;
+  margin-left: 15px;
+  margin-top: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.sign {
+  background-color: var(--pcolor);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  height: 50px;
+  width: 100px;
+  font-size: 18px;
+  margin: 10px;
+}
+
+header p {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 3em;
+  padding: 23px;
+}
+
+.container h3 {
+  text-align: center;
+  font-size: 2em;
+  display: block;
+  width: 100%;
+  border-bottom: 2px groove black;
+  border-top: 2px groove black;
+  padding: 3px;
+  background-color: #cdf59e;
+}
+
+.container p {
+  font-size: 20px;
+  background-color: rgba(204, 247, 197, 0.5);
+}
+
+.container ul {
+  font-size: 20px;
+  background-color: rgba(204, 247, 197, 0.5);
+}
+
+#modal.show-modal {
+  display: block;
+}
+
+#modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.modal {
+  background-color: #c5f7d7;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  opacity: 1;
+  animation: show 1s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.close {
+  background-color: cornflowerblue;
+  border: none;
+  padding: 10px;
+}
+
+.modal-header {
+  background-color: darkcyan;
+  font-size: 30px;
+}
+
+input,
+label {
+  font-size: 25px;
+  margin: 10px 10px;
+}
+
+input {
+  border-radius: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+}
