@@ -1,0 +1,147 @@
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.inc-exp-container {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
+}
+
+.income {
+  margin: 0 20px;
+  border-right: 1px solid #777;
+  padding-right: 120px;
+}
+
+.expense {
+  margin: 0 20px;
+}
+
+.money {
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.money.plus {
+  color: greenyellow;
+}
+
+.money.minus {
+  color: darkred;
+}
+
+h3 {
+  border-bottom: 1px solid grey;
+  margin: 40px 0 20px;
+  padding: 10px 0;
+}
+
+.list {
+  padding: 0em;
+}
+.list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+}
+
+.list li.minus {
+  border-right: 5px solid crimson;
+}
+
+.list li.plus {
+  border-right: 5px solid lawngreen;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  background-color: crimson;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+h1 {
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+h4 {
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+input {
+  height: 35px;
+  border-radius: 5px;
+  background-color: azure;
+  border: 2px solid cadetblue;
+  font-size: 15px;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.btn {
+  height: 40px;
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: darkcyan;
+  border: none;
+  font-weight: bold;
+  color: beige;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+input:focus,
+.btn:focus,
+.delete-btn:focus {
+  outline: none;
+}
