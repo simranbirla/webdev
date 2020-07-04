@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d3557;
+  color: white;
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  background-color: #a8dadc;
+  cursor: pointer;
+}
+
+.setting-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #e63946;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  transform: translateY(0);
+  transition: transform 0.75s ease-in;
+}
+
+label {
+  font-size: 20px;
+}
+
+.settings.hide {
+  transform: translateY(-100%);
+}
+
+select {
+  padding: 10px 20px;
+  width: 200px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #a8dadc;
+  color: #1d3557;
+  font-weight: bold;
+}
+
+select:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+.container {
+  width: 500px;
+  background-color: #457b9d;
+  margin: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  padding-bottom: 60px;
+}
+
+h2 {
+  font-weight: bolder;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+
+input {
+  width: 80%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+.time-container {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+
+.score-container {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+.end-game-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  background-color: #457b9d;
+}
