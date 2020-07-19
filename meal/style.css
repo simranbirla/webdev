@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  background-color: #654062;
+  color: #e8ead3;
+  margin: 0;
+  padding: 0em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 40px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: none;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.search-btn {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.5), 8px 2px rgba(0, 0, 0, 0.5),
+    0 0 30px bisque;
+  background-color: plum;
+  cursor: pointer;
+}
+
+#random {
+  height: 45px;
+  width: 55px;
+  margin-left: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: darkslateblue;
+  box-shadow: 0 0 30px rosybrown;
+  cursor: pointer;
+}
+
+.meals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.meal {
+  position: relative;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.meal img {
+  width: 100%;
+  height: 100%;
+  border: 4px solid wheat;
+  border-radius: 4px;
+}
+
+.meal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+}
+
+.meal-info:hover {
+  opacity: 1;
+}
+
+.single-meal {
+  margin: 30px auto;
+  width: 70%;
+}
+
+.single-meal img {
+  width: 300px;
+  margin: 15px;
+  border: 4px solid bisque;
+}
+
+.single-meal-info {
+  margin: 20px;
+  padding: 10px;
+  border: 2px peachpuff dashed;
+  border-radius: 5px;
+}
+
+.single-meal p {
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.single-meal ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.single-meal ul li {
+  border: 1px solid bisque;
+  border-radius: 5px;
+  background-color: #e8ead3;
+  display: inline-block;
+  color: black;
+  font-size: 12px;
+  padding: 5px;
+  margin: 0 5px 5px 0;
+  font-weight: bold;
+}
