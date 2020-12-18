@@ -1,61 +1,7 @@
-header div{
-	background-color: #ff2ff2;
-	height:50vh;
-	width:15%;
-	display: inline;
-	
-
+body {
+  font-size: 30px;
 }
 
-main div{
-	display: inline-block;
-	width: 30%;
-	background-color: #123456;
-	height: 30vh;
-	width:200px;
-	font-size: 30px;
-	width:10em;
-	border-radius: 20px;
-	transition-property: border-radius;
-	transition-duration: 0.5s;
-	transition-delay: 0.5s;
-	transition-timing-function: ease-in;
-	margin: 0 auto;
-	text-align: center;
-
-}
-
-
-
-main div:hover{
-	color:#facdea;
-	width: 300px;
-	margin: 0 auto;
-	background-color: #2d31b3;
-	border:inset;
-	border-radius: 50%;
-	transition-timing-function: linear;
-	transition-delay: 0s;
-	transition-duration: 2s;
-		transform: translate(100,75);
-	transform: scale(2);
-	transform: rotate(30deg);
-	transform: skewX(45deg);
-
-}
-
-main div:active{
-	color:#fadcef;
-	width: 200px;
-	height: 40px;
-
-}
-footer{
-	background-color: #223344;
-	height: 75vh;
-
-}
-
-header div p{
-	display: inline;
+#change {
+  background-color: pink;
 }
